@@ -4,6 +4,9 @@ import MainLayout from 'layouts/MainLayout.vue';
 import InPage from 'pages/InPage.vue';
 import OutPage from 'pages/OutPage.vue';
 
+import NewInPage from 'src/pages/NewInPage.vue';
+import NewOutPage from 'src/pages/NewOutPage.vue';
+
 const routes: RouteRecordRaw[] = [
   {
     path: '',
@@ -20,6 +23,14 @@ const routes: RouteRecordRaw[] = [
         component: OutPage,
       },
     ],
+  },
+  {
+    path: '/in/new',
+    component: NewInPage,
+  },
+  {
+    path: '/out/new',
+    component: NewOutPage,
   },
 
   // Always leave this as last one,
