@@ -1,8 +1,8 @@
-export interface Todo {
-  id: number;
-  content: string;
-}
+import { DefineComponent } from 'vue';
 
-export interface Meta {
-  totalCount: number;
+export interface Panel {
+  name: string;
+  label: string;
+  icon: string;
+  component?: DefineComponent;
 }
